@@ -28,10 +28,7 @@ import { BookService } from './book.service';
 import { FormbookComponent } from './formbook/formbook.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { HeaderComponent } from './header/header.component';
 import { Ng2SearchPipeModule} from  'ng2-search-filter';
-import { PaymentComponent } from './payment/payment.component';
-import { LoginadminComponent } from './loginadmin/loginadmin.component';
 import { BookdetailsComponent } from './bookdetails/bookdetails.component';
 
 
@@ -49,9 +46,6 @@ import { BookdetailsComponent } from './bookdetails/bookdetails.component';
     FormbookComponent,
     LoginComponent,
     RegisterComponent,
-    HeaderComponent,
-    PaymentComponent,
-    LoginadminComponent,
     BookdetailsComponent
   ],
   imports: [

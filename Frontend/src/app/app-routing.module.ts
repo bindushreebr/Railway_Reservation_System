@@ -8,16 +8,13 @@ import { BookComponent } from './book/book.component';
 import { FormbookComponent } from './formbook/formbook.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
-import { HeaderComponent } from './header/header.component';
 import { AuthGuard } from './auth.guard';
-import { LoginadminComponent } from './loginadmin/loginadmin.component';
 import { BookdetailsComponent } from './bookdetails/bookdetails.component';
 
 
 const routes: Routes = [
 
 {path: '',component:HomeComponent},
-{path: 'header',component:HeaderComponent},
 {path: 'admin', component: AdminComponent},
 {path: 'search', component: SearchComponent},
 {path: 'next', component: NextComponent},
@@ -26,7 +23,6 @@ const routes: Routes = [
 {path: 'bookdetails', component: BookdetailsComponent},
 {path: 'formbook', component: FormbookComponent},
 {path: 'login', component: LoginComponent},
-{path: 'loginadmin', component: LoginadminComponent},
 {path: 'register', component: RegisterComponent}
 ];
 

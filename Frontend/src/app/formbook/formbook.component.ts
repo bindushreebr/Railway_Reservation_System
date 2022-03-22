@@ -3,7 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { BookService } from '../book.service';
 import { Book } from '../book';
 import Swal from 'sweetalert2';
-import { PayService } from '../pay.service';
+
 
 
 @Component({
@@ -21,7 +21,7 @@ export class FormbookComponent implements OnInit {
   alltrainData: any;;
   
 
-  constructor(private formBuilder: FormBuilder,private bookservice:BookService,private payservice:PayService) { }
+  constructor(private formBuilder: FormBuilder,private bookservice:BookService) { }
 
   ngOnInit(): void {
     this.formValue = this.formBuilder.group(
@@ -46,18 +46,6 @@ export class FormbookComponent implements OnInit {
     this.showBtn=false;
   }
 
-  getpayed(){
-    this.payservice.getpay().subscribe(response => {
-      //do something with response
-    }, err => {
-      console.log(err.message);
-    }, () => {
-      console.log('completed');
-    })
-  }
-
-
-  
 
   addBooking() {
     this.bookModelObject.pnr=this.formValue.value.pnr;
